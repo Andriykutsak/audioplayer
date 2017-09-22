@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Audio Player</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width">
+</head>
+
+<body>
+    <div class="player-widget">
+        <div class="container">
+            <div class="btn-wrap">
+                <div class="prew-btn btn"></div>
+                <div id="play-controll-wrap">
+                    <div class="play-btn btn" id='play-btn'></div>
+                </div>
+                <div class="next-btn btn"></div>
+            </div>
+            <div class="song-info">
+                <p class="song-name"></p>
+                <input type="range" id="song-duration" min="0.01" step="1">
+                <input type="range" id="volume-slider" min="0.00" step="0.05" max="1">
+                <p class="current-time"></p>
+                <p class="duration"></p>
+            </div>
+        </div>
+    </div>
+    <div class="songs-wrap container">
+        <div class="song">
+            <div id="play-controll-wrap">
+                <div class="play-btn btn" id='play-btn' data-source="1.mp3" data-name="1.mp3"></div>
+            </div>
+            <div class="song-name">swswswswswsw</div>
+        </div>
+        <div class="song">
+            <div id="play-controll-wrap">
+                <div class="play-btn btn" id='play-btn' data-source="2.mp3" data-name="2.mp3"></div>
+            </div>
+            <div class="song-name">swswswswswsw</div>
+        </div>
+        <div class="song">
+            <div id="play-controll-wrap">
+                <div class="play-btn btn" id='play-btn' data-source="3.mp3" data-name="3.mp3"></div>
+            </div>
+            <div class="song-name">swswswswswsw</div>
+        </div>
+    </div>
+    <div class="author-name">All rights reserved By Andriy Kutsak</div>
+</body>
+<script src="audio.js"></script>
+
+</html>
